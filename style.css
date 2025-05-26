@@ -1,0 +1,120 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: rgb(238, 231, 231);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(236, 230, 230);
+}
+
+/* Main Hero Section */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20240610/pngtree-concepts-to-increase-the-power-of-positive-thinking-and-developing-their-image_15746557.jpg') no-repeat center center/cover;
+    color: rgb(1, 0, 0);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 68px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #057766;
+    color: rgb(236, 232, 239);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #7a1e69;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: rgb(235, 234, 239);
+}
+
+.social-links a {
+    margin: 0 10px;
+    color:rgb(174, 171, 185);
+    text-decoration: none;
+}
+
+/* Responsive Design: Navigation Collapse */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        display: none; /* Initially hidden */
+    }
+
+    .nav-links.active {
+        display: flex; /* Display when active */
+    }
+
+    .menu-toggle {
+        cursor: pointer;
+        background: #057766;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
