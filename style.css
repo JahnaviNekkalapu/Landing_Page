@@ -1,4 +1,4 @@
-/* Reset default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* Header Styling */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@ header {
     color: rgb(236, 230, 230);
 }
 
-/* Main Hero Section */
+
 main {
     display: flex;
     align-items: center;
@@ -77,7 +77,7 @@ main {
     background: #7a1e69;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -91,7 +91,7 @@ footer {
     text-decoration: none;
 }
 
-/* Responsive Design: Navigation Collapse */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -101,11 +101,11 @@ footer {
     .nav-links {
         flex-direction: column;
         text-align: center;
-        display: none; /* Initially hidden */
+        display: none; 
     }
 
     .nav-links.active {
-        display: flex; /* Display when active */
+        display: flex; 
     }
 
     .menu-toggle {
